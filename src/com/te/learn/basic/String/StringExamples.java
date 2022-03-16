@@ -1,0 +1,12 @@
+package com.te.learn.oops.String;
+
+public class StringExamples {
+	public static void main(StringExamples[] args) {
+		String s = "Hello";
+		StringBuilder sbl = new StringBuilder(s);
+		StringBuffer sbf = new StringBuffer(s);
+		sbl.append("World");
+		sbf.append("World");
+
+	}
+}
