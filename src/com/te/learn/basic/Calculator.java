@@ -1,4 +1,4 @@
-package com.te.learn;
+package com.te.learn.basic;
 
 public class Calculator {
 	public static int add(int a, int b) {

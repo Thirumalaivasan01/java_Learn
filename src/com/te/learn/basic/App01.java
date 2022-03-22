@@ -1,4 +1,4 @@
-package com.te.learn;
+package com.te.learn.basic;
 /*
  * This is a normal demo java class*/
 public class App01 {

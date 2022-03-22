@@ -14,6 +14,11 @@ public class Address {
 		this.state = state;
 	}
 
+	public static Address createAddressObject() {
+		// return new Address(houseNumber, street, city,state);
+		return new Address();
+	}
+
 	public Address() {
 		super();
 		// TODO Auto-generated constructor stub

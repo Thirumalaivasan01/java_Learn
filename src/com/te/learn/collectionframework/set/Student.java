@@ -1,45 +1,15 @@
 package com.te.learn.collectionframework.set;
 
-public class Student implements Comparable{
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + sAge;
-		result = prime * result + sId;
-		result = prime * result + ((sName == null) ? 0 : sName.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Student other = (Student) obj;
-		if (sAge != other.sAge)
-			return false;
-		if (sId != other.sId)
-			return false;
-		if (sName == null) {
-			if (other.sName != null)
-				return false;
-		} else if (!sName.equals(other.sName))
-			return false;
-		return true;
-	}
+public class Student implements Comparable {
 
 	private int sId;
 	private String sName;
 	private int sAge;
-	 
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "[StudentId="+sId+"] [StudentName=" + sName + "] [StudentAge" + sAge + "]";
+		return "[StudentId=" + sId + "] [StudentName=" + sName + "] [StudentAge" + sAge + "]";
 	}
 
 	public Student() {
@@ -79,22 +49,52 @@ public class Student implements Comparable{
 	}
 
 	public static void main(String[] args) {
-		
-		
+
 	}
 
 	@Override
 	public int compareTo(Object arg0) {
-		// TODO Auto-generated method stub
-		Student student=(Student)arg0;
-		
-		if(this.sAge<student.sAge) {
-			return -1;
-			
-		}
-		else
+
+		Student student = (Student) arg0;
+
+		if (this.sAge < student.sAge) {
 			return 1;
-		
-		//return 0;
+
+		} else if (this.sAge > student.sAge) {
+			return -1;
+		}
+		return 0;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + sAge;
+		result = prime * result + sId;
+		result = prime * result + ((sName == null) ? 0 : sName.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		if (sAge != other.sAge)
+			return false;
+		if (sId != other.sId)
+			return false;
+		if (sName == null) {
+			if (other.sName != null)
+				return false;
+		} else if (!sName.equals(other.sName))
+			return false;
+		return true;
+	}
+
 }

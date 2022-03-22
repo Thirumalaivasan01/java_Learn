@@ -1,4 +1,4 @@
-package com.te.learn.oops.String;
+package com.te.learn.basic.String;
 
 public class StringExamples {
 	public static void main(StringExamples[] args) {
@@ -7,6 +7,7 @@ public class StringExamples {
 		StringBuffer sbf = new StringBuffer(s);
 		sbl.append("World");
 		sbf.append("World");
+		System.out.println(sbl);
 
 	}
 }

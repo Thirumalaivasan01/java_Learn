@@ -1,4 +1,4 @@
-package com.te.learn;
+package com.te.learn.basic;
 import java.util.Scanner;
 public class App02 {
 	public static void main(String[] args) {

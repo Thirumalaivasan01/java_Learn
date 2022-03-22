@@ -1,4 +1,4 @@
-package com.te.learn.oops.relationship;
+package com.te.learn.oops.encapsulation;
 
 public class Human {
 	private String humanName;

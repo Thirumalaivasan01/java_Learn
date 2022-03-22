@@ -21,6 +21,7 @@ public class App15 {
 		Child child = new Child();
 		child.test();
 		Parent p = new Child();
+				
 		p.test();
 
 	}

@@ -1,4 +1,4 @@
-package com.te.learn;
+package com.te.learn.basic;
 
 public class App4 {
 	static {

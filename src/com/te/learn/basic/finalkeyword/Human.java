@@ -63,18 +63,17 @@ public class Human {
 		}
 	}
 
-	public Address createAddressObject() {
-		// return new Address(houseNumber, street, city,state);
-		return new Address();
-	}
 
-	public Human(String humanName, int humanAge, int humanHeight, double humanWeight, Address address) {
+
+	public Human(String humanName, int humanAge, int humanHeight, double humanWeight) {
 		super();
 		this.humanName = humanName;
 		this.humanAge = humanAge;
 		this.humanHeight = humanHeight;
 		this.humanWeight = humanWeight;
-		this.address = address;
+		//this.address = address2;
 	}
+
+	
 
 }
